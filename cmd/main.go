@@ -6,8 +6,10 @@ import (
 	"fmt"
 	"log"
 
+	_ "github.com/go-sql-driver/mysql"
+
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	kafka "github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/edupooter/intensivo-golang/infra/kafka"
 	repository2 "github.com/edupooter/intensivo-golang/infra/repository"
 	usecase2 "github.com/edupooter/intensivo-golang/usecase"
 )
